@@ -1,0 +1,7 @@
+{
+		"name" : "My bro",
+		"cost" : 11,
+		"reload_time": 12,
+		"icon": "examplemod:orange",
+		"scene": "examplemod:my_bro"
+}

@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2m6id7i4ftk4"]
+
+[ext_resource type="PackedScene" uid="uid://5ryceq54uek3" path="res://assets/scenes/bros/tank/tank.tscn" id="1_3hnb3"]
+[ext_resource type="PackedScene" uid="uid://dkdutb6y7ggkn" path="res://assets/scenes/bullet/bullet_fusilier.tscn" id="2_fevut"]
+
+[node name="Bro" instance=ExtResource("1_3hnb3")]
+bullet_Scene = ExtResource("2_fevut")
+dmg = 10
+id = "my_bro"
+maxhealth = 300
+
+[node name="HatPos" parent="." index="0"]
+position = Vector2(-5, -37)
+
+[node name="Graphics" parent="." index="6"]
+position = Vector2(8, -10)
+
+[node name="Sprite2D2" parent="Graphics" index="1"]
+region_rect = Rect2(205, 73, 34, 16)
+
+[node name="Sprite2D" parent="Graphics/Sprite2D2" index="0"]
+offset = Vector2(1.76, -3.75)
+region_rect = Rect2(207, 58, 21, 13)
+
+[node name="Sprite2D4" parent="Graphics/Sprite2D2/Sprite2D" index="0"]
+show_behind_parent = true
+offset = Vector2(14.28, 0)
+region_rect = Rect2(228, 58, 17, 10)
+
+[node name="TankAnims" parent="Graphics" index="3"]
+speed_scale = 2.0
